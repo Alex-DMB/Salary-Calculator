@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto"
+            rel="stylesheet"
+        />
+        <title>Cálculo de Salário</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="inputs">
+                <p>Quanto você ganha por hora?</p>
+                <input type="number" class="valorHora" placeholder="Ex: 10" />
+                <p>Número de horas trabalhadas no mês</p>
+                <input
+                    type="number"
+                    class="horasTrabalhadasMes"
+                    placeholder="Ex: 180"
+                />
+                <button onclick="calcular()">Calcular</button>
+            </div>
+
+            <div class="resultados">
+                <div class="resultado">
+                    <p>Salário Bruto:&nbsp</p>
+                    <p class="salarioBruto"></p>
+                </div>
+
+                <div class="resultado">
+                    <p>Imposto de Renda:&nbsp</p>
+                    <p class="impostoRenda"></p>
+                </div>
+
+                <div class="resultado">
+                    <p>INSS:&nbsp</p>
+                    <p class="inss"></p>
+                </div>
+
+                <div class="resultado">
+                    <p>Sindicato:&nbsp</p>
+                    <p class="sindicato"></p>
+                </div>
+
+                <div class="resultado">
+                    <p>Salário Líquido:&nbsp</p>
+                    <p class="salarioLiquido"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="/scripts.js"></script>
+    </body>
+</html>
